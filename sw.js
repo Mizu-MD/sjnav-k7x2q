@@ -1,6 +1,6 @@
 // sjnav service worker. One release = app shell + required map pack, installed and validated together.
 // The previous complete release stays in charge until the new one is fully cached; failures never delete it.
-const BUILD = 'c5ddd1f7e2', V = 'sjrel-' + BUILD, PACKURL = 'pack_big.bin.gz?v=6', PACKBYTES = 26604586;
+const BUILD = '322ae97823', V = 'sjrel-' + BUILD, PACKURL = 'pack_big.bin.gz?v=6', PACKBYTES = 26604586;
 const T_CACHE = self.__t1 || 4000, T_NET = self.__t2 || 20000, T_PACK = self.__t3 || 180000;
 const SHELL = ['./', 'index.html'];
 async function packOK(r) { // size and gzip magic must match what the build recorded
